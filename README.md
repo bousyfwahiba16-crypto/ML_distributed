@@ -7,6 +7,10 @@ Mettre en œuvre un entraînement distribué par parallélisme de données avec 
 - Python 3.8+
 - pip install -r requirements.txt
 
+## Activez l'environnement 
+- venv\Scripts\activate.bat
+- Vous verrez (venv) apparaître. Ensuite installez les dépendances avec ce cmd : pip install -r requirements.txt
+- apres meli kantinstaller les packages et tt kadiri run les files for exemple : python run_single.py
 ## Structure du projet
 - `src/model.py` : Définition du CNN
 - `src/data_utils.py` : Chargement distribué de MNIST
