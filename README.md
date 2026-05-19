@@ -22,7 +22,7 @@ Faculté des Sciences Ben M'Sik — Université Hassan II de Casablanca
    - 7.2 [Exécution locale GPU (WSL Ubuntu requis pour le distribué)](#72-exécution-locale-gpu-wsl-ubuntu-requis-pour-le-distribué)
 8. [Résultats attendus et livrables](#8-résultats-attendus-et-livrables)
 9. [Dépannage (FAQ)](#9-dépannage-faq)
-10. [Auteurs et encadrement](#10-auteurs-et-encadrement)
+10. [Auteurs](#10-auteurs)
 
 ---
 
@@ -80,14 +80,12 @@ et d'analyser l'efficacité du scaling (speedup, throughput, temps par epoch) po
 ## 4. Structure du dépôt
 
 ```
-correct these things:
-Structure du dépôt:
-sysRepartis/
+ML_distributed/
 ├── notebooks/                      # Parcours A — Notebooks Colab
 │   ├── SysRepartisCPU.ipynb        
 │   └── SysRepartisGPU.ipynb
 │
-├── outputs/                        # Généré à l'exécution
+├── outputs/                        
 |
 ├── scripts/                        # Scripts de lancement
 │   ├── CPU
@@ -104,8 +102,8 @@ sysRepartis/
 │   ├── models/
 │   │   └── model.py                # Définition du modèle
 │   └── training/
-│        ├── train.py         # Entraînement mono-GPU/CPU
-│        └── training_Gpu.py    # Entraînement distribué (DDP)
+│        ├── train.py         # Entraînement CPU
+│        └── training_Gpu.py    # Entraînement GPU
 │
 ├── requirements.txt                # Dépendances Python
 └── README.md                       
@@ -468,7 +466,7 @@ Les exécutions ci-dessus sont documentées par captures du terminal PowerShell 
 
 ---
 
-## 10. Auteurs et encadrement
+## 10. Auteurs
 
 **Équipe projet :**
 - Wahiba Bousyf et Hajar Alouani
