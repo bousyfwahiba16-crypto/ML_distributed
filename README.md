@@ -85,7 +85,7 @@ ML_distributed/
 │   ├── SysRepartisCPU.ipynb        
 │   └── SysRepartisGPU.ipynb
 │
-├── outputs/                        # Généré à l'exécution
+├── outputs/                        
 |
 ├── scripts/                        # Scripts de lancement
 │   ├── CPU
@@ -102,8 +102,8 @@ ML_distributed/
 │   ├── models/
 │   │   └── model.py                # Définition du modèle
 │   └── training/
-│        ├── train.py         # Entraînement mono-GPU/CPU
-│        └── training_Gpu.py    # Entraînement distribué (DDP)
+│        ├── train.py         # Entraînement CPU
+│        └── training_Gpu.py    # Entraînement GPU
 │
 ├── requirements.txt                # Dépendances Python
 └── README.md                       
