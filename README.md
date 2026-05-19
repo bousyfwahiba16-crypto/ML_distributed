@@ -80,7 +80,7 @@ et d'analyser l'efficacité du scaling (speedup, throughput, temps par epoch) po
 ## 4. Structure du dépôt
 
 ```
-sysRepartis/
+ML_distributed/
 ├── notebooks/                      # Parcours A — Notebooks Colab
 │   ├── SysRepartisCPU.ipynb        
 │   └── SysRepartisGPU.ipynb
