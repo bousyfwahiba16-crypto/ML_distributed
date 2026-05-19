@@ -468,7 +468,7 @@ Les exécutions ci-dessus sont documentées par captures du terminal PowerShell 
 
 ---
 
-## 10. Auteurs et encadrement
+## 10. Auteurs
 
 **Équipe projet :**
 - Wahiba Bousyf et Hajar Alouani
