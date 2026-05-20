@@ -42,7 +42,7 @@ L'objectif pédagogique est de **comparer expérimentalement** :
 - l'entraînement **mono-processus** (référence),
 - l'entraînement **distribué multi-processus** (DDP),
 
-et d'analyser l'efficacité du scaling (speedup, throughput, temps par epoch) pour chacun des deux backends.
+et d'analyser l'efficacité du scaling (temps par epoch) pour chacun des deux backends.
 
 ---
 
@@ -71,7 +71,7 @@ et d'analyser l'efficacité du scaling (speedup, throughput, temps par epoch) po
 ### 3.2 Parcours B — Avec GPU
 
 - **GPU NVIDIA** compatible CUDA
-- **WSL 2** activé sous Windows 10 (build ≥ 19044) ou Windows 11
+- **WSL 2** activé sous Windows 10 ou Windows 11
 - Distribution **Ubuntu 22.04** installée dans WSL
 - **CUDA Toolkit** ≥ 12.1 installé dans WSL
 
