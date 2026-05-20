@@ -398,6 +398,7 @@ python .\run_distributed.py
 [Rank 0] Epoch 1 | Loss: 0.0470
 Temps d'entraînement (world_size=2): 60.8s
 ```
+![Screenshot](outputs/CPUDistri.jpeg)
 
 **Observation système :** pic CPU à **81 %** pendant l'exécution (vs 3 % au repos), confirmant la parallélisation effective des deux processus.
 
@@ -420,6 +421,7 @@ Epoch 0 | Loss: 0.1097
 Epoch 1 | Loss: 0.0479
 Temps d'entraînement GPU (single): 20.4s
 ```
+![Screenshot](outputs/GPUSingle.jpeg)
 
 **Observation système :** GPU NVIDIA RTX 4060 Ti détecté et actif (`cuda`). Le drapeau `NCCL: False` confirme que **NCCL n'est pas disponible sous Windows natif**, ce qui justifie l'usage de WSL Ubuntu pour la distribution GPU.
 
