@@ -378,6 +378,8 @@ python .\run_single.py
 Epoch 0 | Loss: 0.1956
 Temps d'entraînement (single): 34.0s
 ```
+![Screenshot](outputs/CPUSingle.jpeg)
+
 
 **Observation système :** utilisation CPU ~3 % avant exécution, montant légèrement pendant le run.
 
