@@ -439,7 +439,7 @@ Temps d'entraînement GPU (single): 20.4s
 
 ## Interprétations
 
-- **CPU distribué plus lent que CPU single** : avec un modèle léger (MNIST) et seulement 6 cœurs physiques partagés entre 2 processus + dataloaders, le surcoût de synchronisation `all-reduce` via `gloo` dépasse le gain de parallélisation. Ce résultat est attendu et **illustre la limite du speedup naïf** : la distribution n'a d'intérêt qu'au-delà d'un seuil de charge calculatoire.
+- **CPU distribué** : gain modeste par epoch. Ramené à l'epoch, le mode distribué (~30,4 s/epoch) est légèrement plus rapide que le mode mono-processus (34,0 s/epoch), soit un gain d'environ 11 % avec world_size=2
 
 - **GPU single ≈ 1,7× plus rapide que CPU single** malgré 2 epochs (vs 1 epoch côté CPU single), soit un facteur effectif d'environ **3,3× par epoch**. La loss finale (0,0479) est cohérente avec le CPU distribué (0,0470), validant l'équivalence numérique des trois pipelines.
 
@@ -449,7 +449,7 @@ Temps d'entraînement GPU (single): 20.4s
 
 ## Captures d'écran de référence
 
-Les exécutions ci-dessus sont documentées par captures du terminal PowerShell et du Gestionnaire des tâches Windows (onglet Performance) montrant l'utilisation CPU/GPU pendant chaque run. Ces captures sont disponibles dans le repertoire outputs/ avec un video de demonstration.
+Les exécutions ci-dessus sont documentées par captures du terminal PowerShell et du Gestionnaire des tâches Windows montrant l'utilisation CPU/GPU pendant chaque run. Ces captures sont disponibles dans le repertoire outputs/ avec un video de demonstration.
 
 ---
 
